@@ -54,7 +54,7 @@ void setup()
   drawU8g2("And Goto", "192.168.4.1");
   delay(3000);
   drawU8g2("Waiting...", "For WiFi");
-  wifiManager.autoConnect("Dynamic WiFi", "voidSetup()1;");
+  wifiManager.autoConnect("Dynamic WiFi", "//add your own password");
   drawU8g2("Connection", "Established");
   
   delay(1000);
@@ -176,7 +176,7 @@ void openWeather()
 
 void blynk()
 {
-  getPath(serverAddress1, "/EbSeLGn_3cZc8-5ZSBKVWcc6GaQ467Oj/get/V6");
+  getPath(serverAddress1, "//your blynk auth key");
 
   // read the status code and body of the response
   response.remove(0,2);
