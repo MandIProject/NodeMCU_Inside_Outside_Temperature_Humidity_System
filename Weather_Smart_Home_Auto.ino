@@ -176,7 +176,7 @@ void openWeather()
 
 void blynk()
 {
-  getPath(serverAddress1, "//your blynk auth key");
+  getPath(serverAddress1, "/{auth key blynk}/get/{virtual pin no - V0,V1,V2..}");
 
   // read the status code and body of the response
   response.remove(0,2);
